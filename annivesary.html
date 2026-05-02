@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <style>
+        /* Importing a rustic, typewriter font to match The Frazzled Cook's menu */
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+        body {
+            /* Warm, vintage cream background to mimic the cozy, dim-lit ambiance */
+            background-color: #fdf8e2; 
+            color: #2c2c2c;
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Glowing and flickering text effect */
+        .glowing-text {
+            font-size: 3.5em;
+            color: #d9534f;
+            margin-bottom: 10px;
+            animation: flicker 3s infinite alternate;
+        }
+
+        /* Keyframes for the on and off light/flicker effect */
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% { 
+                text-shadow: 0 0 10px #ff9999, 0 0 20px #ff4d4d, 0 0 30px #d9534f; 
+                opacity: 1; 
+            }
+            20%, 24%, 55% { 
+                text-shadow: none; 
+                opacity: 0.3; 
+            }
+        }
+
+        .date {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .message {
+            font-size: 1.8em;
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* Styling the links to look like buttons, using the "iconic blue" of their door */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .links-container a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3b7b8e; /* The iconic blue door color */
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            border-radius: 8px;
+            border: 2px solid #2a5a69;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .links-container a:hover {
+            background-color: #2a5a69;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        .menu-note {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Glowing Anniversary Greeting -->
+    <h1 class="glowing-text">Happy Anniversary, my love!</h1>
+    
+    <!-- The Date -->
+    <div class="date">May 3, 2026</div>
+
+    <!-- The Sweet Message -->
+    <div class="message">
+        I would like to invite you to go out with me and have a dinner. Let's celebrate us at a place as special, cozy, and quirky as our love.
+    </div>
+
+    <!-- The Links -->
+    <div class="links-container">
+        <a href="https://www.instagram.com/thefrazzledcook/" target="_blank">Sneak a peek at the vibe here! ✨</a>
+        
+        <div>
+            <div class="menu-note">Here's the menu, so you can start deciding what you want:</div>
+            <a href="https://www.thefrazzledcook.net/menus-pdf/menu.pdf" target="_blank">View Our Dinner Menu 🍽️</a>
+        </div>
+    </div>
+
+</body>
+</html>
